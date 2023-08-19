@@ -837,7 +837,6 @@ footer .social-media {
   fill: transparent;
 }
 
-
 .contact-form-checkbox:checked
   + .contact-form-checkbox-label
   > .check-icon-wraper {
