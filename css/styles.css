@@ -715,6 +715,10 @@ footer .social-media {
 
 /* ================ MODAL FORM ================ */
 .contact-form-wraper{
+  margin-bottom: 16px;
+}
+
+.contact-form-wraper-comment{
   margin-bottom: 8px;
 }
 
