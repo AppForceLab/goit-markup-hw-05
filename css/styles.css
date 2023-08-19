@@ -532,6 +532,11 @@ body {
   padding: 100px 0;
 }
 
+.footer-form {
+display: flex;
+gap: 24px;
+}
+
 .page-footer .colored-logo {
   color: var(--ligth-background-color);
 }
@@ -589,11 +594,19 @@ footer .social-media {
   background-color: transparent;
   color: var(--white-color);
   font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.48px;
-  border: 1px solid var(--white-color);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 8px 16px;
+  padding-left: 16px;
+}
+
+.subscribe-icon{
+  margin-left: 16px;
+}
+
+.footer-form-input::placeholder{
+    color: var(--white-color);
 }
 
 .footer-form-input:focus {
@@ -603,9 +616,9 @@ footer .social-media {
 }
 
 .footer-btn {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  display: inline-flex;
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
@@ -617,6 +630,8 @@ footer .social-media {
   outline: none;
   color: var(--white-color);
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   font-size: 16px;
   font-weight: 500;
   border: none;
