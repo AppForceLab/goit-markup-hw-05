@@ -1,10 +1,54 @@
-
 .benefits {
-    display: flex;
-    gap: 24px;
-    padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+}
+
+.benefits-icon-wraper {
+  display: none;
+}
+
+.benefits-card-title {
+  color: var(--dark-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.benefits-card-text {
+  align-self: self-start;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------ADAPTIVE > 768px --------- */
+
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    align-items: start;
+    flex-basis: calc((100% - 24px) / 2);
   }
-  
+
+  .benefits {
+    flex-direction: row;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+/* --------ADAPTIVE > 1158px --------- */
+
+@media screen and (min-width: 1158px) {
   .benefits-icon-wraper {
     display: flex;
     justify-content: center;
@@ -15,66 +59,21 @@
     background-color: var(--ligth-background-color);
     border-radius: 4px;
   }
-  
-  .benefits-card-title {
-    color: var(--dark-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-  }
-  
+
   .benefits-item {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
-  /* --------ADAPTIVE > 768px --------- */
-  
-  @media screen and (min-width: 768px) {
-
-    }
-    
-  
-  /* --------ADAPTIVE > 1158px --------- */
-  
-  @media screen and (min-width: 1158px) {
-
-  }
-  
- 
-/* .benefits {
-  display: flex;
+  .benefits {
+  flex-direction: row;
   gap: 24px;
   padding: 24px 0;
 }
 
-.benefits-icon-wraper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 112px;
-  margin-bottom: 8px;
-  background-color: var(--ligth-background-color);
-  border-radius: 4px;
-}
-
 .benefits-card-title {
-  color: var(--dark-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 }
-
-.benefits-item {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  flex-basis: calc((100% - 3 * 24px) / 4);
-} */
